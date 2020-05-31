@@ -1,15 +1,226 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".cmyk_manipulation">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/cmyk_manipulation"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@+string/cmyk_manip" />
+    <TableRow>
+    <View
+        android:layout_height="50dp"></View>
+</TableRow>
 
-</FrameLayout>
+    <TableRow>
+
+        <View android:id="@+id/cmykbox1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#00ffff"
+            android:visibility="visible" />
+
+        <View android:id="@+id/cmykbox2"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#00ffff"
+            android:visibility="visible" />
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/cmykseekbartext1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="100"
+            android:textColor="#00FFFF"
+            android:paddingStart="472px"/>
+        <TextView
+            android:id="@+id/cmykseekbartext5"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="100"
+            android:textColor="#00FFFF"
+            android:paddingStart="468px"/>
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="  C"
+            android:textColor="#00FFFF"/>
+        <SeekBar
+            android:id="@+id/cmyk_as_seekBar1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:progressTint="#00FFFF"
+            android:thumbTint="#00FFFF"
+            android:progress="100"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="C"
+            android:textColor="#00FFFF" />
+        <SeekBar
+            android:id="@+id/cmyk_as_seekBar5"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:progressTint="#00FFFF"
+            android:thumbTint="#00FFFF"
+            android:progress="100"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/cmykseekbartext2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="#FF00FF"
+            android:paddingStart="88px"/>
+        <TextView
+            android:id="@+id/cmykseekbartext6"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="#FF00FF"
+            android:paddingStart="75px"/>
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="  M"
+            android:textColor="#FF00FF"/>
+        <SeekBar
+            android:id="@+id/cmyk_as_seekBar2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:progressTint="#FF00FF"
+            android:thumbTint="#FF00FF"
+            android:progress="0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="M"
+            android:textColor="#FF00FF" />
+        <SeekBar
+            android:id="@+id/cmyk_as_seekBar6"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:progressTint="#FF00FF"
+            android:thumbTint="#FF00FF"
+            android:progress="0"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/cmykseekbartext3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="#ffff00"
+            android:paddingStart="88px"/>
+        <TextView
+            android:id="@+id/cmykseekbartext7"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="#ffff00"
+            android:paddingStart="75px"/>
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="  Y"
+            android:textColor="#ffff00"/>
+        <SeekBar
+            android:id="@+id/cmyk_as_seekBar3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:progressTint="#ffff00"
+            android:thumbTint="#ffff00"
+            android:progress="0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Y"
+            android:textColor="#ffff00" />
+        <SeekBar
+            android:id="@+id/cmyk_as_seekBar7"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:progressTint="#ffff00"
+            android:thumbTint="#ffff00"
+            android:progress="0"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/cmykseekbartext4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="#000000"
+            android:paddingStart="88px"/>
+        <TextView
+            android:id="@+id/cmykseekbartext8"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="#000000"
+            android:paddingStart="75px"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="  K"
+            android:textColor="#000000"/>
+        <SeekBar
+            android:id="@+id/cmyk_as_seekBar4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:progressTint="#000000"
+            android:thumbTint="#000000"
+            android:progress="0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="K"
+            android:textColor="#000000" />
+        <SeekBar
+            android:id="@+id/cmyk_as_seekBar8"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:progressTint="#000000"
+            android:thumbTint="#000000"
+            android:progress="0"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/cmykhexcode1"
+            android:text="#00ffff"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:id="@+id/cmykhexcode2"
+            android:text="#00ffff"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            />
+    </TableRow>
+
+</TableLayout>

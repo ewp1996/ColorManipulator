@@ -1,15 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".rgb_add_sub">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/rgb_add_sub"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@+string/rgb_add_subtract" />
 
-</FrameLayout>
+    <TableRow>
+        <View
+            android:layout_height="50dp"></View>
+    </TableRow>
+
+    <TableRow>
+        <View android:id="@+id/rgb_addorsub_box1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#BB22BB"
+            android:visibility="visible"/>
+
+        <View android:id="@+id/rgb_addorsub_box2"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#44DD44"
+            android:visibility="visible"/>
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/rgbseekbaraddsubtext1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="187"
+            android:textColor="#FF0800"
+            android:paddingStart="366px"/>
+        <TextView
+            android:id="@+id/rgbseekbaraddsubtext4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="68"
+            android:textColor="#FF0800"
+            android:paddingStart="180px"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="  R"
+            android:textColor="#FF0800"/>
+        <SeekBar
+            android:id="@+id/rgb_addsub_seekbar1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:max="255"
+            android:progressTint="#FF0800"
+            android:thumbTint="#FF0800"
+            android:progress="187"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="R"
+            android:textColor="#FF0800" />
+        <SeekBar
+            android:id="@+id/rgb_addsub_seekbar4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:max="255"
+            android:progressTint="#FF0800"
+            android:thumbTint="#FF0800"
+            android:progress="68"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/rgbseekbaraddsubtext2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="34"
+            android:textColor="#00ff00"
+            android:paddingStart="137px"/>
+        <TextView
+            android:id="@+id/rgbseekbaraddsubtext5"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="221"
+            android:textColor="#00ff00"
+            android:paddingStart="419px"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="  G"
+            android:textColor="#00ff00"/>
+        <SeekBar
+            android:id="@+id/rgb_addsub_seekbar2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:max="255"
+            android:progressTint="#00ff00"
+            android:thumbTint="#00ff00"
+            android:progress="34"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="G"
+            android:textColor="#00ff00" />
+        <SeekBar
+            android:id="@+id/rgb_addsub_seekbar5"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:max="255"
+            android:progressTint="#00ff00"
+            android:thumbTint="#00ff00"
+            android:progress="221"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/rgbseekbaraddsubtext3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="187"
+            android:textColor="#0083ff"
+            android:paddingStart="366px"/>
+        <TextView
+            android:id="@+id/rgbseekbaraddsubtext6"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="68"
+            android:textColor="#0083ff"
+            android:paddingStart="174px"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="  B"
+            android:textColor="#0083ff"/>
+        <SeekBar
+            android:id="@+id/rgb_addsub_seekbar3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:max="255"
+            android:progressTint="#0083ff"
+            android:thumbTint="#0083ff"
+            android:progress="187"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="B"
+            android:textColor="#0083ff" />
+        <SeekBar
+            android:id="@+id/rgb_addsub_seekbar6"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:max="255"
+            android:progressTint="#0083ff"
+            android:thumbTint="#0083ff"
+            android:progress="68"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/rgbaddsubhexcode1"
+            android:text="#bb22bb"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:id="@+id/rgbaddsubhexcode2"
+            android:text="#44dd44"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            />
+    </TableRow>
+
+</TableLayout>
